@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Field, Formik, Form } from 'formik';
 import axios from 'axios';
-import MeshplayText from '../../assets/images/layer5/layer5-badges-white.png';
+import MeshplayText from '../../assets/images/khulnasoft/khulnasoft-badges-white.png';
 import SignupFormWrapper from './signupform.style.js';
 import DiscussCallout from '../Discuss-Callout';
 

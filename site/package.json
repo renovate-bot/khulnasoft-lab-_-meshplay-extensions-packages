@@ -1,8 +1,8 @@
 {
-  "name": "layer5-recognition-program",
+  "name": "khulnasoft-recognition-program",
   "version": "1.0.0",
   "private": true,
-  "description": "layer5-recognition-program",
+  "description": "khulnasoft-recognition-program",
   "author": "Lee Calcote",
   "dependencies": {
     "@tanstack/react-query": "^4.29.25",

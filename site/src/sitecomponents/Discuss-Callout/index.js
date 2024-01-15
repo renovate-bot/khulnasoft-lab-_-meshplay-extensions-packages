@@ -1,7 +1,7 @@
 import React from "react";
 import DiscussWrapper from "./discuss.style";
 
-import Discuss from "../../assets/images/layer5/layer5-badges-white.png";
+import Discuss from "../../assets/images/khulnasoft/khulnasoft-badges-white.png";
 
 const DiscussCallout = () => {
   return (

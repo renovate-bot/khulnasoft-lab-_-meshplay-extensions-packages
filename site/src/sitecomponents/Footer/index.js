@@ -29,7 +29,7 @@ const Footer = () => {
             <li>
               <a
                 className="category-link"
-                href="https://hub.docker.com/u/layer5/"
+                href="https://hub.docker.com/u/khulnasoft/"
               >
                 <img src={DockerIcon} alt="Docker Icon" />
                 Docker Hub
@@ -164,7 +164,7 @@ const Footer = () => {
           </h3>
           <ul className="section-categories">
             <li>
-              <a className="category-link" href="https://twitter.com/layer5">
+              <a className="category-link" href="https://twitter.com/khulnasoft">
                 <img src={TwitterIcon} alt="Twitter Icon" />
                 Twitter
               </a>
@@ -181,7 +181,7 @@ const Footer = () => {
             <li>
               <a
                 className="category-link"
-                href="https://www.linkedin.com/company/layer5/"
+                href="https://www.linkedin.com/company/khulnasoft/"
               >
                 <img src={LinkedinIcon} alt="Linkedin Icon" />
                 Linkedin

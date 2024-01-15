@@ -131,7 +131,7 @@ jobs:
       id: meta
       uses: docker/metadata-action@v4
       with:
-          images: layer5/meshplay-cloud
+          images: khulnasoft/meshplay-cloud
           flavor: |
             latest=true
           tags: |
@@ -167,7 +167,7 @@ jobs:
           cd meshplay-cloud
           sudo su
           git pull https://l5io:${{ secrets.GH_ACCESS_TOKEN }}@github.com/khulnasoft/meshplay-cloud
-          docker pull layer5/meshplay-cloud:staging-latest
+          docker pull khulnasoft/meshplay-cloud:staging-latest
           make stg-deploy
   prod:
     needs: update-doc-release-version
@@ -195,7 +195,7 @@ jobs:
       id: meta
       uses: docker/metadata-action@v4
       with:
-          images: layer5/meshplay-cloud
+          images: khulnasoft/meshplay-cloud
           flavor: |
             latest=true
           tags: |
@@ -230,6 +230,6 @@ jobs:
           cd meshplay-cloud
           sudo su
           git pull https://l5io:${{ secrets.GH_ACCESS_TOKEN }}@github.com/khulnasoft/meshplay-cloud
-          docker pull layer5/meshplay-cloud:production-latest
+          docker pull khulnasoft/meshplay-cloud:production-latest
           make prod-deploy
           

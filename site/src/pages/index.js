@@ -16,8 +16,8 @@ import recognitionBanner from '../assets/images/recognition-banner.png';
 import '../fonts.css';
 import GithubLogo from './githubLogo';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import layer5Logo from '../assets/images/layer5/layer5-badges.png';
-import layer5LogoLight from '../assets/images/layer5/layer5-badges-white.png';
+import khulnasoftLogo from '../assets/images/khulnasoft/khulnasoft-badges.png';
+import khulnasoftLogoLight from '../assets/images/khulnasoft/khulnasoft-badges-white.png';
 
 const App = () => {
   const [theme, toggleTheme] = useDarkMode();
@@ -26,7 +26,7 @@ const App = () => {
   const fillColor = theme === 'light' ? '#24292F' : '#ffffff';
   const queryClient = new QueryClient();
 
-  const Logo = theme === 'light' ? layer5Logo : layer5LogoLight;
+  const Logo = theme === 'light' ? khulnasoftLogo : khulnasoftLogoLight;
   // const handleSignUpFormSubmit = () => {
   //   setShowSignUpButton(false);
   // };

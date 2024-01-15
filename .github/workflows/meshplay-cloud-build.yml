@@ -124,7 +124,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: layer5/meshplay-cloud
+          images: khulnasoft/meshplay-cloud
           flavor: |
             latest=true
           tags: |
@@ -160,7 +160,7 @@ jobs:
             script: |
                 cd meshplay-cloud
                 sudo git pull
-                sudo docker pull layer5/meshplay-cloud:staging-latest
+                sudo docker pull khulnasoft/meshplay-cloud:staging-latest
                 sudo make stg-deploy
 
       # -
