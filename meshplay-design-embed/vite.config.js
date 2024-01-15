@@ -9,7 +9,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "lib/main.jsx"),
-      name: "MesheryDesignEmbed",
+      name: "MeshplayDesignEmbed",
       // the proper extensions will be added
       fileName: "meshplay-design-embed",
     },

@@ -84,7 +84,7 @@
       <rect class="cls-13" x="237.53" y="143.87" width="120.21" height="147.96"/>
     </clipPath>
   </defs>
-  <g id="Meshery_Operator" data-name="Meshery Operator">
+  <g id="Meshplay_Operator" data-name="Meshplay Operator">
     <g class="cls-11">
       <g>
         <path class="cls-16" d="m480.86,602.94v16.86l32.66-16.86h-32.66Z"/>
@@ -120,7 +120,7 @@
         <path class="cls-10" d="m385.69,557.57v-3.6h12.52v-7.34h-21.87v10.94h9.35Z"/>
         <path class="cls-10" d="m408.71,573.7v4.27h-12.52v7.34h15.43c1.68.03,3.29-.59,4.49-1.71,1.21-1.12,1.9-2.65,1.93-4.27v-5.63h-9.33Z"/>
         <path class="cls-1" d="m384.95,574.1v3.87h8.66v7.34h-11.14c-1.68.03-3.29-.59-4.5-1.71-1.2-1.12-1.9-2.66-1.93-4.27v-5.23h8.9Z"/>
-        <text class="cls-4" transform="translate(184.27 417.79)"><tspan x="0" y="0">Meshery</tspan><tspan x="-8.61" y="72">Ope</tspan><tspan class="cls-15" x="111.39" y="72">r</tspan><tspan x="130.59" y="72">a</tspan><tspan class="cls-8" x="160.89" y="72">t</tspan><tspan x="179.67" y="72">or</tspan></text>
+        <text class="cls-4" transform="translate(184.27 417.79)"><tspan x="0" y="0">Meshplay</tspan><tspan x="-8.61" y="72">Ope</tspan><tspan class="cls-15" x="111.39" y="72">r</tspan><tspan x="130.59" y="72">a</tspan><tspan class="cls-8" x="160.89" y="72">t</tspan><tspan x="179.67" y="72">or</tspan></text>
       </g>
     </g>
   </g>

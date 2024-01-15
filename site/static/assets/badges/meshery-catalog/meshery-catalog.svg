@@ -72,7 +72,7 @@
       <rect class="cls-12" x="232.33" y="162.92" width="130.61" height="116.09"/>
     </clipPath>
   </defs>
-  <g id="Meshery_Catalog" data-name="Meshery Catalog">
+  <g id="Meshplay_Catalog" data-name="Meshplay Catalog">
     <g class="cls-10">
       <g>
         <path class="cls-13" d="m480.86,602.94v16.86l32.66-16.86h-32.66Z"/>
@@ -101,7 +101,7 @@
         <path class="cls-8" d="m385.69,557.57v-3.6h12.52v-7.34h-21.87v10.94h9.35Z"/>
         <path class="cls-8" d="m408.71,573.7v4.27h-12.52v7.34h15.43c1.68.03,3.29-.59,4.49-1.71,1.21-1.12,1.9-2.65,1.93-4.27v-5.63h-9.33Z"/>
         <path class="cls-1" d="m384.95,574.1v3.87h8.66v7.34h-11.14c-1.68.03-3.29-.59-4.5-1.71-1.2-1.12-1.9-2.66-1.93-4.27v-5.23h8.9Z"/>
-        <text class="cls-3" transform="translate(184.27 417.79)"><tspan x="0" y="0">Meshery</tspan><tspan class="cls-6" x="7.14" y="72">C</tspan><tspan x="52.14" y="72">a</tspan><tspan class="cls-9" x="82.44" y="72">t</tspan><tspan x="101.64" y="72">alog</tspan></text>
+        <text class="cls-3" transform="translate(184.27 417.79)"><tspan x="0" y="0">Meshplay</tspan><tspan class="cls-6" x="7.14" y="72">C</tspan><tspan x="52.14" y="72">a</tspan><tspan class="cls-9" x="82.44" y="72">t</tspan><tspan x="101.64" y="72">alog</tspan></text>
       </g>
     </g>
   </g>

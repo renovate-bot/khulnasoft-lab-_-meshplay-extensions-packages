@@ -37,7 +37,7 @@ jobs:
           repository: 'khulnasoft-lab/meshplay-extensions'
           number: ${{ inputs.pr_number }}
           id: extension-test
-          message: 'Starting [Meshery Extensions tests](https://github.com/khulnasoft-lab/meshplay-extensions-packages/actions/runs/${{ github.run_id }})...'
+          message: 'Starting [Meshplay Extensions tests](https://github.com/khulnasoft-lab/meshplay-extensions-packages/actions/runs/${{ github.run_id }})...'
           recreate: true
   build-ui-and-server:
     uses: khulnasoft/meshplay/.github/workflows/build-ui-server-reusable-workflow.yml@master
@@ -55,12 +55,12 @@ jobs:
           repository: 'khulnasoft-lab/meshplay-extensions'
           number: ${{ inputs.pr_number }}
           id: extension-test
-          message: ':heavy_check_mark: Meshery UI and Meshery Server builds complete.'
+          message: ':heavy_check_mark: Meshplay UI and Meshplay Server builds complete.'
           append: true
   build-meshplay-extension: 
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Meshery-extensions code
+      - name: Checkout Meshplay-extensions code
         uses: actions/checkout@v4
         with:
           repository: khulnasoft-lab/meshplay-extensions
@@ -76,13 +76,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ secrets.NODE_VERSION }}
-      - name: Build Meshery Extension UI
+      - name: Build Meshplay Extension UI
         working-directory: ./meshplay-extensions
         run: make meshmap # gql build is not done for now
       - name: Show runner tree
         run: tree /home/runner/.meshplay
       - name: relocate meshplay-extension-ui
-        run: mv /home/runner/.meshplay/provider/Meshery/*/provider /home/runner/provider
+        run: mv /home/runner/.meshplay/provider/Meshplay/*/provider /home/runner/provider
       - name: Show runner tree
         run: tree /home/runner/ -L 3
       - name: Upload artifacts
@@ -98,7 +98,7 @@ jobs:
           repository: 'khulnasoft-lab/meshplay-extensions'
           number: ${{ inputs.pr_number }}
           id: extension-test
-          message: ':heavy_check_mark: Meshery Extensions build complete.'
+          message: ':heavy_check_mark: Meshplay Extensions build complete.'
           append: true
       - name: comment Failure
         if: failure()
@@ -108,7 +108,7 @@ jobs:
           repository: 'khulnasoft-lab/meshplay-extensions'
           number: ${{ inputs.pr_number }}
           id: extension-test
-          message: ':x: Meshery Extensions build Failed.'
+          message: ':x: Meshplay Extensions build Failed.'
           append: true
   tests-ui-e2e:
     needs: [build-ui-and-server, build-meshplay-extension]
@@ -124,7 +124,7 @@ jobs:
           id: extension-test
           message: ':heavy_check_mark: Setting up test environment...'
           append: true
-      - name: Check out Meshery code
+      - name: Check out Meshplay code
         uses: actions/checkout@v4
         with:
           repository: khulnasoft/meshplay
@@ -134,7 +134,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
-          repository: layer5io/meshplay-consul
+          repository: khulnasoft/meshplay-consul
           path: ./meshplay-consul
       - name: Download artifacts
         uses: actions/download-artifact@v4
@@ -156,13 +156,13 @@ jobs:
       - name: Create a out/ folder in meshplay ui
         run: |
           mkdir -p ui/out
-      - name: Download Meshery-ui artifacts
+      - name: Download Meshplay-ui artifacts
         uses: actions/download-artifact@v4
         with:
           name: meshplay-ui-build
           path: ui/out/
       - name: Update /etc/hosts
-        run: echo "127.0.0.1 meshplaylocal.layer5.io" | sudo tee -a /etc/hosts
+        run: echo "127.0.0.1 meshplaylocal.khulnasoft.com" | sudo tee -a /etc/hosts
       - name: Run meshplay-consul
         run: |
           mkdir -p /home/runner/.meshplay/bin
@@ -179,24 +179,24 @@ jobs:
         run: |
           echo ${{env.tag}}
           echo ${{env}}
-          mkdir -p /home/runner/.meshplay/provider/Meshery/${{env.tag}}/provider/
+          mkdir -p /home/runner/.meshplay/provider/Meshplay/${{env.tag}}/provider/
       - name: Run backend
         env:
-          PROVIDER_BASE_URLS: https://meshplay.layer5.io
+          PROVIDER_BASE_URLS: https://meshplay.khulnasoft.com
           PORT: 9081
-          ADAPTER_URLS: "meshplaylocal.layer5.io:10000 meshplaylocal.layer5.io:10001 meshplaylocal.layer5.io:10002 meshplaylocal.layer5.io:10003 meshplaylocal.layer5.io:10004 meshplaylocal.layer5.io:10008 meshplaylocal.layer5.io:10009 meshplaylocal.layer5.io:10007"
+          ADAPTER_URLS: "meshplaylocal.khulnasoft.com:10000 meshplaylocal.khulnasoft.com:10001 meshplaylocal.khulnasoft.com:10002 meshplaylocal.khulnasoft.com:10003 meshplaylocal.khulnasoft.com:10004 meshplaylocal.khulnasoft.com:10008 meshplaylocal.khulnasoft.com:10009 meshplaylocal.khulnasoft.com:10007"
         run: |
           cd server/cmd
           chmod +x ./main
           BUILD=${{env.tag}} ./main &
-      - name: Download Meshery-extension-ui artifacts
+      - name: Download Meshplay-extension-ui artifacts
         uses: actions/download-artifact@v4
         with:
           name: meshplay-extension-ui
           path: provider
       - name: Move provider files
         run: |
-          mv /home/runner/work/meshplay-extensions-packages/meshplay-extensions-packages/provider/ /home/runner/.meshplay/provider/Meshery/${{env.tag}}/
+          mv /home/runner/work/meshplay-extensions-packages/meshplay-extensions-packages/provider/ /home/runner/.meshplay/provider/Meshplay/${{env.tag}}/
       - name: show runner tree
         run: tree /home/runner/.meshplay
       - name: checkout cypress code

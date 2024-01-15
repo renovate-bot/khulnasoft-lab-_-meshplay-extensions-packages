@@ -80,7 +80,7 @@ const data = {
             answer: [
                 "Yes, Layer5 encourages collaboration and welcomes your ideas to enhance the badge design process and community engagement.",
             ],
-            link: "https://discuss.layer5.io/",
+            link: "https://discuss.khulnasoft.com/",
             linktext: "Share your ideas"
         },
     ]

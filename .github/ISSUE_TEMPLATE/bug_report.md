@@ -18,8 +18,8 @@ assignees: ''
 
 - **Host OS:** Mac Linux Windows
 - **Platform:** Docker or Kubernetes
-- **Meshery Server Version:** stable-v
-- **Meshery Client Version:** stable-v
+- **Meshplay Server Version:** stable-v
+- **Meshplay Client Version:** stable-v
 
 <!-- Optional 
 #### To Reproduce
@@ -31,8 +31,8 @@ assignees: ''
 
 ---
 #### Contributor [Guides](https://docs.meshplay.io/project/contributing) and Resources
-- 🛠 [Meshery Build & Release Strategy](https://docs.meshplay.io/project/build-and-release)
+- 🛠 [Meshplay Build & Release Strategy](https://docs.meshplay.io/project/build-and-release)
 - 📚 [Instructions for contributing to documentation](https://github.com/khulnasoft/meshplay/blob/master/CONTRIBUTING.md#documentation-contribution-flow)
-   - Meshery documentation [site](https://docs.meshplay.io/) and [source](https://github.com/khulnasoft/meshplay/tree/master/docs)
-- 🎨 Wireframes and [designs for Meshery UI](https://www.figma.com/file/SMP3zxOjZztdOLtgN4dS2W/Meshery-UI) in Figma [(open invite)](https://www.figma.com/team_invite/redeem/qJy1c95qirjgWQODApilR9)
+   - Meshplay documentation [site](https://docs.meshplay.io/) and [source](https://github.com/khulnasoft/meshplay/tree/master/docs)
+- 🎨 Wireframes and [designs for Meshplay UI](https://www.figma.com/file/SMP3zxOjZztdOLtgN4dS2W/Meshplay-UI) in Figma [(open invite)](https://www.figma.com/team_invite/redeem/qJy1c95qirjgWQODApilR9)
 - 🙋🏾🙋🏼 Questions: [Discussion Forum](http://discuss.meshplay.io) and [Community Slack](https://slack.meshplay.io)

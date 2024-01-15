@@ -1,4 +1,4 @@
-name: Meshery Cloud Build
+name: Meshplay Cloud Build
 on:
 #   workflow_call:
 #     inputs:
@@ -54,10 +54,10 @@ jobs:
     if: inputs.release-environment == 'production'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Meshery Cloud code
+      - name: Checkout Meshplay Cloud code
         uses: actions/checkout@v4
         with:
-          repository: layer5io/meshplay-cloud
+          repository: khulnasoft/meshplay-cloud
           fetch-depth: 1
           token: ${{ secrets.GH_ACCESS_TOKEN }}
       - name: API Docs - Install Redocly
@@ -82,10 +82,10 @@ jobs:
     name: Staging - Docker build and push
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Meshery Cloud code
+      - name: Checkout Meshplay Cloud code
         uses: actions/checkout@v4
         with:
-            repository: layer5io/meshplay-cloud
+            repository: khulnasoft/meshplay-cloud
             fetch-depth: 1
             token: ${{ secrets.GH_ACCESS_TOKEN }}
       - name: Build Docs
@@ -153,9 +153,9 @@ jobs:
         if: success()
         uses: appleboy/ssh-action@master
         with:
-            host: ${{ secrets.MESHERY_CLOUD_AWS_STG_HOST }}
-            username: ${{ secrets.MESHERY_CLOUD_AWS_PROD_USERNAME }}
-            key: ${{ secrets.MESHERY_CLOUD_AWS_PROD_KEY }}
+            host: ${{ secrets.MESHPLAY_CLOUD_AWS_STG_HOST }}
+            username: ${{ secrets.MESHPLAY_CLOUD_AWS_PROD_USERNAME }}
+            key: ${{ secrets.MESHPLAY_CLOUD_AWS_PROD_KEY }}
             port: 22
             script: |
                 cd meshplay-cloud

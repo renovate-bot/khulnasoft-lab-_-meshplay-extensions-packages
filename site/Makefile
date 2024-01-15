@@ -30,7 +30,7 @@ build:
 site:
 	npm start; cd ..
 
-## Empty build cache and run layer5.io on your local machine.
+## Empty build cache and run khulnasoft.com on your local machine.
 clean: 
 	gatsby clean; cd ..; make site
 

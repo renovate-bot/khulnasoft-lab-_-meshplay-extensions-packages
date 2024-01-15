@@ -25,7 +25,7 @@ function Navigation({ theme, toggleTheme, showSignUpButton, logo }) {
           <Toggle theme={theme} toggleTheme={toggleTheme} />
           {showSignUpButton && (
             <a
-              href="https://meshplay.layer5.io"
+              href="https://meshplay.khulnasoft.com"
               className="signup-btn"
               role="button"
             >
@@ -75,7 +75,7 @@ function Navigation({ theme, toggleTheme, showSignUpButton, logo }) {
         </div>
         <div className="action-btns">
           <a
-            href="https://meshplay.layer5.io"
+            href="https://meshplay.khulnasoft.com"
             className="signup-btn"
             role="button"
           >

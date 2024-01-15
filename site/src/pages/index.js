@@ -71,11 +71,11 @@ const App = () => {
               </div>
               <p>
                 See the{' '}
-                <a href="https://layer5.io/community/handbook/recognition">
+                <a href="https://khulnasoft.com/community/handbook/recognition">
                   Recognition
                 </a>{' '}
                 section of the{' '}
-                <a href="https://layer5.io/community/handbook/recognition">
+                <a href="https://khulnasoft.com/community/handbook/recognition">
                   Layer5 Community Handbook
                 </a>{' '}
                 for details of when and how each badge is awarded.
@@ -102,7 +102,7 @@ const App = () => {
                       <ul>
                         <li>
                           Visit your{' '}
-                          <a href="https://meshplay.layer5.io">Layer5 Cloud</a>{' '}
+                          <a href="https://meshplay.khulnasoft.com">Layer5 Cloud</a>{' '}
                           Profile to see the badges
                         </li>
                         <li>Click on the badge, which you wanted to display</li>
@@ -130,7 +130,7 @@ const App = () => {
               className="embedVideo"
             /> */}
 
-              {/* <p className="caption">Launch and learn with Meshery</p>
+              {/* <p className="caption">Launch and learn with Meshplay</p>
             <p className="byline">The cloud native playground contains a set of learning paths that incorporate an application networking centric curriculum featuring training on 200+ integrations.</p> */}
             </section>
             {/* <section className="form" id="signup-form">
@@ -143,13 +143,13 @@ const App = () => {
                 <p>Engage in the Layer5 community by joining us on Slack</p>
                 <div className="btn-container">
                   <div>
-                    <a href="https://slack.layer5.io/">
+                    <a href="https://slack.khulnasoft.com/">
                       Join Our Open Source Community
                     </a>
                   </div>
                   <div>
                     <a
-                      href="https://slack.layer5.io/"
+                      href="https://slack.khulnasoft.com/"
                       className="btn-secondary"
                     >
                       View Leaderboard

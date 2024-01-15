@@ -19,5 +19,5 @@ assignees: ''
 
 ---
 #### Contributor [Guides](https://docs.meshplay.io/project/contributing) and Resources
-- 🛠 [Meshery Build & Release Strategy](https://docs.meshplay.io/project/build-and-release)
+- 🛠 [Meshplay Build & Release Strategy](https://docs.meshplay.io/project/build-and-release)
 - 🙋🏾🙋🏼 Questions: [Discussion Forum](http://discuss.meshplay.io) and [Community Slack](https://slack.meshplay.io)

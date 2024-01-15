@@ -1,4 +1,4 @@
-name: Meshery Extension Test
+name: Meshplay Extension Test
 on:
   release:
     types: [published]
@@ -23,7 +23,7 @@ jobs:
     name: UI end-to-end tests
     runs-on: ubuntu-latest
     steps:
-      - name: Check out Meshery code
+      - name: Check out Meshplay code
         uses: actions/checkout@v4
         with:
           repository: khulnasoft/meshplay
@@ -33,7 +33,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
-          repository: layer5io/meshplay-consul
+          repository: khulnasoft/meshplay-consul
           path: ./meshplay-consul
       - name: Download artifacts
         uses: actions/download-artifact@v4
@@ -55,13 +55,13 @@ jobs:
       - name: Create a out/ folder in meshplay ui
         run: |
           mkdir -p ui/out
-      - name: Download Meshery-ui artifacts
+      - name: Download Meshplay-ui artifacts
         uses: actions/download-artifact@v4
         with:
           name: meshplay-ui-build
           path: ui/out/
       - name: Update /etc/hosts
-        run: echo "127.0.0.1 meshplaylocal.layer5.io" | sudo tee -a /etc/hosts
+        run: echo "127.0.0.1 meshplaylocal.khulnasoft.com" | sudo tee -a /etc/hosts
       - name: Run meshplay-consul
         run: |
           mkdir -p /home/runner/.meshplay/bin
@@ -78,20 +78,20 @@ jobs:
         run: |
           echo ${{env.tag}}
           echo ${{env}}
-          mkdir -p /home/runner/.meshplay/provider/Meshery/${{env.tag}}/provider/navigator
+          mkdir -p /home/runner/.meshplay/provider/Meshplay/${{env.tag}}/provider/navigator
       - name: Run backend
         env:
-          PROVIDER_BASE_URLS: https://meshplay.layer5.io
+          PROVIDER_BASE_URLS: https://meshplay.khulnasoft.com
           PORT: 9081
-          ADAPTER_URLS: "meshplaylocal.layer5.io:10000 meshplaylocal.layer5.io:10001 meshplaylocal.layer5.io:10002 meshplaylocal.layer5.io:10003 meshplaylocal.layer5.io:10004 meshplaylocal.layer5.io:10008 meshplaylocal.layer5.io:10009 meshplaylocal.layer5.io:10007"
+          ADAPTER_URLS: "meshplaylocal.khulnasoft.com:10000 meshplaylocal.khulnasoft.com:10001 meshplaylocal.khulnasoft.com:10002 meshplaylocal.khulnasoft.com:10003 meshplaylocal.khulnasoft.com:10004 meshplaylocal.khulnasoft.com:10008 meshplaylocal.khulnasoft.com:10009 meshplaylocal.khulnasoft.com:10007"
         run: |
           cd server/cmd
           chmod +x ./main
           BUILD=${{env.tag}} ./main &
-      - name: Download Meshery Extension Package Version ${{env.tag}}
+      - name: Download Meshplay Extension Package Version ${{env.tag}}
         run: |
           wget https://github.com/khulnasoft-lab/meshplay-extensions-packages/releases/download/${{env.tag}}/provider-meshplay.tar.gz 
-          tar -xzf   provider-meshplay.tar.gz -C /home/runner/.meshplay/provider/Meshery/${{env.tag}}
+          tar -xzf   provider-meshplay.tar.gz -C /home/runner/.meshplay/provider/Meshplay/${{env.tag}}
       - name: show runner tree
         run: tree /home/runner/.meshplay
       - name: checkout cypress code

@@ -1,4 +1,4 @@
-name: Release and Deploy Meshery Cloud
+name: Release and Deploy Meshplay Cloud
 on:
   workflow_call:
     inputs:
@@ -19,13 +19,13 @@ on:
         required: true
       DOCKER_PASSWORD: 
         required: true
-      MESHERY_CLOUD_AWS_PROD_USERNAME:
+      MESHPLAY_CLOUD_AWS_PROD_USERNAME:
         required: true
-      MESHERY_CLOUD_AWS_STG_HOST:
+      MESHPLAY_CLOUD_AWS_STG_HOST:
         required: true
-      MESHERY_CLOUD_AWS_PROD_HOST:
+      MESHPLAY_CLOUD_AWS_PROD_HOST:
         required: true
-      MESHERY_CLOUD_AWS_PROD_KEY:
+      MESHPLAY_CLOUD_AWS_PROD_KEY:
         required: true
 
   workflow_dispatch:
@@ -48,10 +48,10 @@ jobs:
     if: inputs.release-environment == 'production'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Meshery Cloud code
+      - name: Checkout Meshplay Cloud code
         uses: actions/checkout@v4
         with:
-          repository: layer5io/meshplay-cloud
+          repository: khulnasoft/meshplay-cloud
           fetch-depth: 1
           token: ${{ secrets.GH_ACCESS_TOKEN }}
       - name: API Docs - Install Redocly
@@ -76,11 +76,11 @@ jobs:
     if: inputs.release-environment == 'staging'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Meshery Cloud code
+      - name: Checkout Meshplay Cloud code
         uses: actions/checkout@v4
         with:
           path: meshplay-cloud
-          repository: layer5io/meshplay-cloud
+          repository: khulnasoft/meshplay-cloud
           fetch-depth: 1
           token: ${{ secrets.GH_ACCESS_TOKEN }}
       - uses: actions/setup-go@v4
@@ -111,11 +111,11 @@ jobs:
     name: Staging - Docker build and push
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout Meshery Cloud code
+    - name: Checkout Meshplay Cloud code
       uses: actions/checkout@v4
       with:
         path: meshplay-cloud
-        repository: layer5io/meshplay-cloud
+        repository: khulnasoft/meshplay-cloud
         fetch-depth: 1
         token: ${{ secrets.GH_ACCESS_TOKEN }}
     - name: Build Docs
@@ -159,14 +159,14 @@ jobs:
       if: success()
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secrets.MESHERY_CLOUD_AWS_STG_HOST }}
-        username: ${{ secrets.MESHERY_CLOUD_AWS_PROD_USERNAME }}
-        key: ${{ secrets.MESHERY_CLOUD_AWS_PROD_KEY }}
+        host: ${{ secrets.MESHPLAY_CLOUD_AWS_STG_HOST }}
+        username: ${{ secrets.MESHPLAY_CLOUD_AWS_PROD_USERNAME }}
+        key: ${{ secrets.MESHPLAY_CLOUD_AWS_PROD_KEY }}
         port: 22
         script: |
           cd meshplay-cloud
           sudo su
-          git pull https://l5io:${{ secrets.GH_ACCESS_TOKEN }}@github.com/layer5io/meshplay-cloud
+          git pull https://l5io:${{ secrets.GH_ACCESS_TOKEN }}@github.com/khulnasoft/meshplay-cloud
           docker pull layer5/meshplay-cloud:staging-latest
           make stg-deploy
   prod:
@@ -175,10 +175,10 @@ jobs:
     name: Production - Docker build and push
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout Meshery Cloud code
+    - name: Checkout Meshplay Cloud code
       uses: actions/checkout@v4
       with:
-        repository: layer5io/meshplay-cloud
+        repository: khulnasoft/meshplay-cloud
         path: meshplay-cloud
         fetch-depth: 1
         token: ${{ secrets.GH_ACCESS_TOKEN }}
@@ -222,14 +222,14 @@ jobs:
     - name: Deploy production
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secrets.MESHERY_CLOUD_AWS_PROD_HOST }}
-        username: ${{ secrets.MESHERY_CLOUD_AWS_PROD_USERNAME }}
-        key: ${{ secrets.MESHERY_CLOUD_AWS_PROD_KEY }}
+        host: ${{ secrets.MESHPLAY_CLOUD_AWS_PROD_HOST }}
+        username: ${{ secrets.MESHPLAY_CLOUD_AWS_PROD_USERNAME }}
+        key: ${{ secrets.MESHPLAY_CLOUD_AWS_PROD_KEY }}
         port: 22
         script: |
           cd meshplay-cloud
           sudo su
-          git pull https://l5io:${{ secrets.GH_ACCESS_TOKEN }}@github.com/layer5io/meshplay-cloud
+          git pull https://l5io:${{ secrets.GH_ACCESS_TOKEN }}@github.com/khulnasoft/meshplay-cloud
           docker pull layer5/meshplay-cloud:production-latest
           make prod-deploy
           

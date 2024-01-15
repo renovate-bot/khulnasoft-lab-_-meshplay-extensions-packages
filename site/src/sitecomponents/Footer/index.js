@@ -14,13 +14,13 @@ const Footer = () => {
       <div className="container">
         <div className="footer-links resources">
           <h3 className="section-title">
-            <a className="title-link" href="https://layer5.io/community">
+            <a className="title-link" href="https://khulnasoft.com/community">
               Project
             </a>
           </h3>
           <ul className="section-categories">
             <li>
-              <a className="category-link" href="https://layer5.io/calendar">
+              <a className="category-link" href="https://khulnasoft.com/calendar">
                 <img src={CalendarIcon} alt="Calendar Icon" />
                 Calendar
               </a>
@@ -36,13 +36,13 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a className="category-link" href="https://slack.layer5.io/">
+              <a className="category-link" href="https://slack.khulnasoft.com/">
                 <img src={SlackIcon} alt="Slack Icon" />
                 Slack
               </a>
             </li>
             <li>
-              <a className="category-link" href="https://github.com/layer5io/">
+              <a className="category-link" href="https://github.com/khulnasoft/">
                 <img src={GithubIcon} alt="GitHub Icon" />
                 Github
               </a>
@@ -51,7 +51,7 @@ const Footer = () => {
         </div>
         <div className="footer-links getting-started">
           <h3 className="section-title">
-            <a className="title-link" href="https://layer5.io/community">
+            <a className="title-link" href="https://khulnasoft.com/community">
               Getting Started
             </a>
           </h3>
@@ -69,7 +69,7 @@ const Footer = () => {
             <li>
               <a
                 className="category-link"
-                href="https://layer5.io/cloud-native-management/meshplay/integrations"
+                href="https://khulnasoft.com/cloud-native-management/meshplay/integrations"
               >
                 Integrations
               </a>
@@ -79,15 +79,15 @@ const Footer = () => {
                 className="category-link"
                 href="https://meshplay.io/#getting-started"
               >
-                Run Meshery
+                Run Meshplay
               </a>
             </li>
             <li>
               <a
                 className="category-link"
-                href="https://meshplay.layer5.io/catalog"
+                href="https://meshplay.khulnasoft.com/catalog"
               >
-                Meshery Catalog
+                Meshplay Catalog
               </a>
             </li>
           </ul>
@@ -100,7 +100,7 @@ const Footer = () => {
           </h3>
           <ul className="section-categories">
             <li>
-              <a className="category-link" href="https://discuss.layer5.io/">
+              <a className="category-link" href="https://discuss.khulnasoft.com/">
                 Discussion Forum
               </a>
             </li>
@@ -112,14 +112,14 @@ const Footer = () => {
               </a>
             </li> */}
             <li>
-              <a className="category-link" href="https://meshplay.layer5.io">
+              <a className="category-link" href="https://meshplay.khulnasoft.com">
                 Layer5 Cloud
               </a>
             </li>
             <li>
               <a
                 className="category-link"
-                href="https://layer5.io/community/members"
+                href="https://khulnasoft.com/community/members"
               >
                 Community Members
               </a>
@@ -135,13 +135,13 @@ const Footer = () => {
             <li>
               <a
                 className="category-link"
-                href="https://layer5.io/community/events/"
+                href="https://khulnasoft.com/community/events/"
               >
                 Community Events
               </a>
             </li>
             <li>
-              <a className="category-link" href="https://layer5.io/subscribe">
+              <a className="category-link" href="https://khulnasoft.com/subscribe">
                 Mailing Lists
               </a>
             </li>
@@ -149,7 +149,7 @@ const Footer = () => {
             <li>
               <a
                 className="category-link"
-                href="https://layer5.io/service-mesh-landscape"
+                href="https://khulnasoft.com/service-mesh-landscape"
               >
                 Service Mesh Comparison
               </a>
@@ -158,7 +158,7 @@ const Footer = () => {
         </div>
         <div className="footer-links resources">
           <h3 className="section-title">
-            <a className="title-link" href="https://layer5.io/resources">
+            <a className="title-link" href="https://khulnasoft.com/resources">
               Social
             </a>
           </h3>
@@ -196,7 +196,7 @@ const Footer = () => {
         </div>
         <div className="text">Empowering engineers all around the world</div>
         <div className="text">
-          <a href="https://layer5.io/about">About</a>
+          <a href="https://khulnasoft.com/about">About</a>
         </div>
       </div>
     </FooterWrapper>

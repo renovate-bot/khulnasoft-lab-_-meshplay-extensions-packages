@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     title: `Layer5 Recognition Program`,
     description: `Showcasing Your Achievements as a User and a Contributor`,
-    siteUrl: `https://badges.layer5.io`
+    siteUrl: `https://badges.khulnasoft.com`
   },
   plugins: [
     `gatsby-plugin-image`,

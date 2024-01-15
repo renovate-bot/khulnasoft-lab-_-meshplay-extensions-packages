@@ -1,4 +1,4 @@
-name: Meshery Extension Release updater
+name: Meshplay Extension Release updater
 on:
   release:
     types: [published]

@@ -1,9 +1,9 @@
 # <a name="contributing">Contributing Overview</a>
 Please do! Thanks for your help improving the project! :balloon:
 
-All contributors are welcome. Please see the [newcomers welcome guide](https://layer5.io/community/newcomers) for how, where and why to contribute. This project is community-built and welcomes collaboration. Contributors are expected to adhere to our [Code of Conduct](.CODE_OF_CONDUCT.md).
+All contributors are welcome. Please see the [newcomers welcome guide](https://khulnasoft.com/community/newcomers) for how, where and why to contribute. This project is community-built and welcomes collaboration. Contributors are expected to adhere to our [Code of Conduct](.CODE_OF_CONDUCT.md).
 
-Not sure where to start? First, see the [newcomers welcome guide](https://layer5.io/community/newcomers). Grab an open issue with the [help-wanted label](../../labels/help%20wanted) and jump in. Join the [Slack account](https://slack.meshplay.io) and engage in conversation. Create a [new issue](/../../issues/new/choose) if needed.  All [pull requests](/../../pulls) should reference an open [issue](/../../issues). Include keywords in your pull request descriptions, as well as commit messages, to [automatically close issues in GitHub](https://help.github.com/en/github/managing-your-work-on-github/closing-issues-using-keywords).
+Not sure where to start? First, see the [newcomers welcome guide](https://khulnasoft.com/community/newcomers). Grab an open issue with the [help-wanted label](../../labels/help%20wanted) and jump in. Join the [Slack account](https://slack.meshplay.io) and engage in conversation. Create a [new issue](/../../issues/new/choose) if needed.  All [pull requests](/../../pulls) should reference an open [issue](/../../issues). Include keywords in your pull request descriptions, as well as commit messages, to [automatically close issues in GitHub](https://help.github.com/en/github/managing-your-work-on-github/closing-issues-using-keywords).
 
 **Sections**
 - <a name="contributing">General Contribution Flow</a>
@@ -15,7 +15,7 @@ Relevant coding style guidelines are the Go Code Review Comments and the Formatt
 
 # <a name="contributing">General Contribution Flow</a>
 
-In order to contribute to Meshery Play, please follow the fork-and-pull request workflow described [here](./CONTRIBUTING-gitflow.md).
+In order to contribute to Meshplay Play, please follow the fork-and-pull request workflow described [here](./CONTRIBUTING-gitflow.md).
 
 ## Issues & Pull Requests
 
@@ -247,7 +247,7 @@ Or you may configure your IDE, for example, Visual Studio Code to automatically 
 <a href="https://user-images.githubusercontent.com/7570704/64490167-98906400-d25a-11e9-8b8a-5f465b854d49.png" ><img src="https://user-images.githubusercontent.com/7570704/64490167-98906400-d25a-11e9-8b8a-5f465b854d49.png" width="50%"><a>
 
 ## <a name="contributing-docs">Documentation Contribution Flow</a>
-Please contribute! Meshery documentation uses Jekyll and GitHub Pages to host docs sites. Learn more about [Meshery's documentation framework](https://docs.meshplay.io/project/contributing). The process of contributing follows this flow:
+Please contribute! Meshplay documentation uses Jekyll and GitHub Pages to host docs sites. Learn more about [Meshplay's documentation framework](https://docs.meshplay.io/project/contributing). The process of contributing follows this flow:
 
 1. Create a fork, if you have not already, by following the steps described [here](./CONTRIBUTING-gitflow.md)
 1. In the local copy of your fork, navigate to the docs folder.
@@ -281,7 +281,7 @@ make docker
 
 ### UI Lint Rules
 
-Meshery uses eslint to maintain code consistency.
+Meshplay uses eslint to maintain code consistency.
 
 # <a name="maintaining"> Reviews</a>
 All contributors are invited to review pull requests. See this short video on [how to review a pull request](https://www.youtube.com/watch?v=isLfo7jfE6g&feature=youtu.be).
@@ -301,5 +301,5 @@ This repository and site are available as open-source under the terms of the [Ap
 
 ### Community
 
-See an <a href="https://layer5.io/community/handbook/repository-overview">overview of repositories</a> and projects by tech stack in the <a href="https://layer5.io/community/handbook/">Community Handbook</a>.
+See an <a href="https://khulnasoft.com/community/handbook/repository-overview">overview of repositories</a> and projects by tech stack in the <a href="https://khulnasoft.com/community/handbook/">Community Handbook</a>.
 

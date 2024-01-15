@@ -1,5 +1,5 @@
 # Badges
-This folder contains all the Badges. Changing any file in this folder will affect email templates as well as Meshery Cloud.
+This folder contains all the Badges. Changing any file in this folder will affect email templates as well as Meshplay Cloud.
 
 ### Badges included in this folder are:
 - Bring a buddy
@@ -19,10 +19,10 @@ This folder contains all the Badges. Changing any file in this folder will affec
 - Hacktoberfest Contributor
 - Landscape
 - Longevity Legend
-- Meshery
-- Meshery Catalog
-- Meshery Docs
-- Meshery Operator
+- Meshplay
+- Meshplay Catalog
+- Meshplay Docs
+- Meshplay Operator
 - MeshMap
 - MeshMap Snapshot
 - MeshMaster Certified

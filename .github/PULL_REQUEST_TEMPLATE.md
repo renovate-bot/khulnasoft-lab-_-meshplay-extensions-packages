@@ -5,12 +5,12 @@ This PR fixes #
 **Notes for Reviewers**
 
 
-**[Signed commits](https://github.com/layer5io/meshplay/blob/master/CONTRIBUTING.md#signing-off-on-commits-developer-certificate-of-origin)**
+**[Signed commits](https://github.com/khulnasoft/meshplay/blob/master/CONTRIBUTING.md#signing-off-on-commits-developer-certificate-of-origin)**
 - [ ] Yes, I signed my commits.
  
 
 <!--
-Thank you for contributing to Meshery! 
+Thank you for contributing to Meshplay! 
 
 Contributing Conventions:
 

@@ -31,7 +31,7 @@ const useScript = (url, embedId) => {
   }, [url, loaded, embedId]);
 };
 
-const MesheryDesignEmbed = ({
+const MeshplayDesignEmbed = ({
   embedScriptSrc,
   embedId,
   style = {},
@@ -45,4 +45,4 @@ const MesheryDesignEmbed = ({
   );
 };
 
-export default MesheryDesignEmbed;
+export default MeshplayDesignEmbed;

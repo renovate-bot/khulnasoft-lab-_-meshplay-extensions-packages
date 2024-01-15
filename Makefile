@@ -1,4 +1,4 @@
-# Copyright Meshery Authors
+# Copyright Meshplay Authors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -30,7 +30,7 @@ build:
 site:
 	cd site; npm start; cd ..
 
-## Empty build cache and run layer5.io on your local machine.
+## Empty build cache and run khulnasoft.com on your local machine.
 clean: 
 	cd site; gatsby clean; cd ..; make site
 

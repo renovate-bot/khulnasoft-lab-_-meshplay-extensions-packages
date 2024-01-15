@@ -79,7 +79,7 @@
       <rect class="cls-11" x="232.33" y="156.55" width="130.61" height="130.61"/>
     </clipPath>
   </defs>
-  <g id="Meshery">
+  <g id="Meshplay">
     <g class="cls-9">
       <g>
         <path class="cls-12" d="m480.87,602.94v16.86l32.65-16.86h-32.65Z"/>
@@ -130,7 +130,7 @@
         <path class="cls-8" d="m408.72,573.7v4.27h-12.52v7.34h15.42c1.66.03,3.28-.59,4.49-1.71,1.21-1.12,1.91-2.65,1.94-4.27v-5.63h-9.33Z"/>
         <path class="cls-1" d="m384.95,574.1v3.87h8.66v7.34h-11.15c-1.66.03-3.28-.59-4.49-1.71-1.21-1.12-1.91-2.66-1.94-4.27v-5.23h8.92Z"/>
       </g>
-      <text class="cls-3" transform="translate(184.27 447.79)"><tspan x="0" y="0">Meshery</tspan></text>
+      <text class="cls-3" transform="translate(184.27 447.79)"><tspan x="0" y="0">Meshplay</tspan></text>
     </g>
   </g>
 </svg>

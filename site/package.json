@@ -30,5 +30,5 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
-  "proxy": "https://discuss.layer5.io/"
+  "proxy": "https://discuss.khulnasoft.com/"
 }

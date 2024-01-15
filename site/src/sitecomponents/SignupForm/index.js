@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Field, Formik, Form } from 'formik';
 import axios from 'axios';
-import MesheryText from '../../assets/images/layer5/layer5-badges-white.png';
+import MeshplayText from '../../assets/images/layer5/layer5-badges-white.png';
 import SignupFormWrapper from './signupform.style.js';
 import DiscussCallout from '../Discuss-Callout';
 
@@ -90,7 +90,7 @@ const SignupForm = ({ onSubmit }) => {
                 setErrorMessage(
                   `Use of ${values.email} is not allowed. Please use a non-anonymous email address / domain.
 
-The Meshery Playground is connected to live Kubernetes cluster(s) and allows users full-control over those clusters. Requiring users to register a non-anonymous user account keeps the Playground safe and healthy for all to enjoy. Without requiring users to sign-in, the Meshery Playground would allow anonymous access for anyone and everyone to potentially perform nefarious acts. Sign-up to receive a user account, entitled with perpetually free and full access the Playground environment.`
+The Meshplay Playground is connected to live Kubernetes cluster(s) and allows users full-control over those clusters. Requiring users to register a non-anonymous user account keeps the Playground safe and healthy for all to enjoy. Without requiring users to sign-in, the Meshplay Playground would allow anonymous access for anyone and everyone to potentially perform nefarious acts. Sign-up to receive a user account, entitled with perpetually free and full access the Playground environment.`
                 );
               } else if (!values.role) {
                 setFormValidations(true);
@@ -216,9 +216,9 @@ The Meshery Playground is connected to live Kubernetes cluster(s) and allows use
               </button>
               <div className='form-group'>
                 <label htmlFor='privacy-statement' className='form-field-privacy'>
-                  By clicking “submit”, you agree to Meshery's
+                  By clicking “submit”, you agree to Meshplay's
                   <a
-                    href='https://meshplay.layer5.io/legal/terms-of-service.html'
+                    href='https://meshplay.khulnasoft.com/legal/terms-of-service.html'
                     target='_blank'
                     rel='noopener noreferrer'>
                     {' '}
@@ -226,7 +226,7 @@ The Meshery Playground is connected to live Kubernetes cluster(s) and allows use
                   </a>
                   ,
                   <a
-                    href='https://meshplay.layer5.io/legal/privacy-policy.html'
+                    href='https://meshplay.khulnasoft.com/legal/privacy-policy.html'
                     target='_blank'
                     rel='noopener noreferrer'>
                     {' '}
@@ -241,7 +241,7 @@ The Meshery Playground is connected to live Kubernetes cluster(s) and allows use
         <div className='signup-text'>
           <h2>Sign-up to receive a user account, entitled with perpetually free and full access the Playground environment.</h2>
           <p>
-            Meshery maintainers will verify and process your request for access as quickly as possible. Due to the large influx of program participation requests, it may take some time before system access is granted. To help you familiarize with Meshery in the meantime, you will receive confirmation of your position in the queue.
+            Meshplay maintainers will verify and process your request for access as quickly as possible. Due to the large influx of program participation requests, it may take some time before system access is granted. To help you familiarize with Meshplay in the meantime, you will receive confirmation of your position in the queue.
           </p>
           <div className='desc-callout'>
             <DiscussCallout />
@@ -258,7 +258,7 @@ The Meshery Playground is connected to live Kubernetes cluster(s) and allows use
           <h2>Thank you for your interest in Layer5 Recognition Program  early access program!</h2>
           <p>
             You are now signed up for the Layer5 Recognition Program early access program and your position
-            on the waiting list is confirmed. Please wait patiently for a response from the Meshery
+            on the waiting list is confirmed. Please wait patiently for a response from the Meshplay
             team.
           </p>
           <p>
@@ -266,7 +266,7 @@ The Meshery Playground is connected to live Kubernetes cluster(s) and allows use
             <a href='mailto:learn@meshplay.io'>learn@meshplay.io</a>.
           </p>
           <h3 className='white'>
-            - Team <img src={MesheryText} alt='Meshery' />
+            - Team <img src={MeshplayText} alt='Meshplay' />
           </h3>
         </div>
       </>
