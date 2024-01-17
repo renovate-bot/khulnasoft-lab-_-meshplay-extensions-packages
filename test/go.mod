@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/gobuffalo/pop v4.13.1+incompatible
 	github.com/ory/client-go v1.1.5
-	github.com/sirupsen/logrus v1.9.0
+	github.com/sirupsen/logrus v1.9.3
 )
 
 require (
