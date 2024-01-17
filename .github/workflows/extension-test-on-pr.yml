@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: comment starting point
-        uses: hasura/comment-progress@v2.1.0
+        uses: hasura/comment-progress@v2.3.0
         with:
           github-token: ${{ secrets.GH_ACCESS_TOKEN }}
           repository: 'khulnasoft-lab/meshplay-extensions'
@@ -49,7 +49,7 @@ jobs:
     needs: [build-ui-and-server]
     steps:
       - name: comment progress
-        uses: hasura/comment-progress@v2.1.0
+        uses: hasura/comment-progress@v2.3.0
         with:
           github-token: ${{ secrets.GH_ACCESS_TOKEN }}
           repository: 'khulnasoft-lab/meshplay-extensions'
@@ -92,7 +92,7 @@ jobs:
           path: /home/runner/provider
           if-no-files-found: error
       - name: comment progress
-        uses: hasura/comment-progress@v2.1.0
+        uses: hasura/comment-progress@v2.3.0
         with:
           github-token: ${{ secrets.GH_ACCESS_TOKEN }}
           repository: 'khulnasoft-lab/meshplay-extensions'
@@ -102,7 +102,7 @@ jobs:
           append: true
       - name: comment Failure
         if: failure()
-        uses: hasura/comment-progress@v2.1.0
+        uses: hasura/comment-progress@v2.3.0
         with:
           github-token: ${{ secrets.GH_ACCESS_TOKEN }}
           repository: 'khulnasoft-lab/meshplay-extensions'
@@ -116,7 +116,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: comment progress start
-        uses: hasura/comment-progress@v2.1.0
+        uses: hasura/comment-progress@v2.3.0
         with:
           github-token: ${{ secrets.GH_ACCESS_TOKEN }}
           repository: 'khulnasoft-lab/meshplay-extensions'
@@ -212,7 +212,7 @@ jobs:
           mv cypress/cypress ui/
           mv cypress/cypress.config.js ui/cypress.config.js
       - name: comment progress start
-        uses: hasura/comment-progress@v2.1.0
+        uses: hasura/comment-progress@v2.3.0
         with:
           github-token: ${{ secrets.GH_ACCESS_TOKEN }}
           repository: 'khulnasoft-lab/meshplay-extensions'
@@ -275,7 +275,7 @@ jobs:
         run: tree ui/cypress/results
       - name: Comment Success Status
         if: ${{ success() || steps.runTest.outcome == 'success' || steps.retryTest.outcome == 'success' || steps.retryTest2.outcome == 'success' }}
-        uses: hasura/comment-progress@v2.1.0
+        uses: hasura/comment-progress@v2.3.0
         with:
           github-token: ${{ secrets.GH_ACCESS_TOKEN }}
           repository: 'khulnasoft-lab/meshplay-extensions'
@@ -301,7 +301,7 @@ jobs:
         with:
           jsonArtifact: "cypress-summary/__tests__/ouput.json"
       - name: comment the summary
-        uses: hasura/comment-progress@v2.1.0
+        uses: hasura/comment-progress@v2.3.0
         if: always()
         with: 
           message:  ${{join(steps.cypress_summary.outputs.*, '\n')}}
@@ -323,7 +323,7 @@ jobs:
           name: cypress-ss
           path: ui/cypress/videos
       - name: Comment Test failure
-        uses: hasura/comment-progress@v2.1.0
+        uses: hasura/comment-progress@v2.3.0
         if: ${{ failure() && steps.retryTest2.outcome == 'failure' }}
         with:
           github-token: ${{ secrets.GH_ACCESS_TOKEN }}
@@ -334,7 +334,7 @@ jobs:
           append: true
       - name: Comment Final Status
         if: always()
-        uses: hasura/comment-progress@v2.1.0
+        uses: hasura/comment-progress@v2.3.0
         with:
           github-token: ${{ secrets.GH_ACCESS_TOKEN }}
           repository: 'khulnasoft-lab/meshplay-extensions'
