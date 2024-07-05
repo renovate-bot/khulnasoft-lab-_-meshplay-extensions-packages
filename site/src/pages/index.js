@@ -32,7 +32,7 @@ const App = () => {
   // };
   return (
     <>
-      <title>Layer5 Recognition Program</title>
+      <title>Khulnasoft Recognition Program</title>
       <meta
         name="description"
         content="Showcasing Your Achievements as a User and a Contributor"
@@ -56,14 +56,14 @@ const App = () => {
               <h3 className="try-now-txt">
                 Showcasing Your Achievements as a User and a Contributor
               </h3>
-              <h1>Layer5 Recognition Program</h1>
+              <h1>Khulnasoft Recognition Program</h1>
               <p className="desc-text">
-                Layer5 badges are one of the many ways that we recognize the
-                efforts of our contributors and uplift our users. Layer5 badges
+                Khulnasoft badges are one of the many ways that we recognize the
+                efforts of our contributors and uplift our users. Khulnasoft badges
                 represent milestones that you achieve both in using and in
-                contributing to Layer5-supported open source projects. As a
+                contributing to Khulnasoft-supported open source projects. As a
                 contributor, this is how you demonstrate your ownership,
-                dedication, skills and loyalty to Layer5. As a user, this is how
+                dedication, skills and loyalty to Khulnasoft. As a user, this is how
                 you demonstrate your prowess.
               </p>
               <div className="banner-main">
@@ -76,14 +76,14 @@ const App = () => {
                 </a>{' '}
                 section of the{' '}
                 <a href="https://khulnasoft.com/community/handbook/recognition">
-                  Layer5 Community Handbook
+                  Khulnasoft Community Handbook
                 </a>{' '}
                 for details of when and how each badge is awarded.
               </p>
               <section className="faq">
                 {/* <h1>Frequently Asked Questions</h1> */}
                 <Faq
-                  category={['Layer5 Badges']}
+                  category={['Khulnasoft Badges']}
                   display-category-title={'false'}
                 />
               </section>
@@ -92,7 +92,7 @@ const App = () => {
               </section>
               <div className="banner-logos">
                 <h3>
-                  Wear your badge proudly. Embed your Layer5 badges in your
+                  Wear your badge proudly. Embed your Khulnasoft badges in your
                   GitHub profile
                 </h3>
                 <div className="display-badge-steps-parent">
@@ -102,7 +102,7 @@ const App = () => {
                       <ul>
                         <li>
                           Visit your{' '}
-                          <a href="https://meshplay.khulnasoft.com">Layer5 Cloud</a>{' '}
+                          <a href="https://meshplay.khulnasoft.com">Khulnasoft Cloud</a>{' '}
                           Profile to see the badges
                         </li>
                         <li>Click on the badge, which you wanted to display</li>
@@ -140,7 +140,7 @@ const App = () => {
             <section className="join-community">
               <div>
                 <h1>Join the community!</h1>
-                <p>Engage in the Layer5 community by joining us on Slack</p>
+                <p>Engage in the Khulnasoft community by joining us on Slack</p>
                 <div className="btn-container">
                   <div>
                     <a href="https://slack.khulnasoft.com/">

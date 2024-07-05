@@ -40,7 +40,7 @@ clean:
 #-----------------------------------------------------------------------------
 
 # ## Build and run site in a container
-# docker:
-# 	docker run --name site -d --rm -p 4000:4000 -v `pwd`:"/srv/jekyll" jekyll/jekyll:4.0.0 bash -c "bundle install; jekyll serve --drafts --livereload"
+docker:
+ 	docker run --name site -d --rm -p 4000:4000 -v `pwd`:"/srv/jekyll" jekyll/jekyll:4.0.0 bash -c "bundle install; jekyll serve --drafts --livereload"
 
 .PHONY: setup-libs site-setup build docker site setup

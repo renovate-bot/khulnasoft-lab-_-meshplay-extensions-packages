@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Layer5 Recognition Program`,
+    title: `Khulnasoft Recognition Program`,
     description: `Showcasing Your Achievements as a User and a Contributor`,
     siteUrl: `https://badges.khulnasoft.com`
   },

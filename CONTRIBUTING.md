@@ -292,7 +292,7 @@ Resources: https://lab.github.com and https://try.github.com/
 ### Stargazers
 
 <p align="center">
-  <i>If you like Layer5 projects, please <a href="../../stargazers">★</a> star this repository to show your support! 🤩</i>
+  <i>If you like Khulnasoft projects, please <a href="../../stargazers">★</a> star this repository to show your support! 🤩</i>
 <a href="../../stargazers"><img align="right" src="https://starchart.cc/khulnasoft/meshplay.svg" /></a></p>
 
 ### License

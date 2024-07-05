@@ -41,7 +41,7 @@ jobs:
           name: meshplay
           path: server/cmd/
       - name: Setup go
-        uses: actions/setup-go@v4
+        uses: actions/setup-go@v5
         with:
           go-version: ${{ secrets.GO_VERSION }}
       - name: Setup node

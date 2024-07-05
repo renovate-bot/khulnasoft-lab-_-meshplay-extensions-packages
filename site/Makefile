@@ -1,4 +1,4 @@
-# Copyright Layer5, Inc.
+# Copyright Khulnasoft, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@ setup:
 
 ## Build and run site in development environment
 site-dev:
-	npm run start; cd ..
+	npm run start --force; cd ..
 
 ## Build site; generate static site
 build:

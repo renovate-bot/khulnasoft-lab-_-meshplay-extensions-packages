@@ -13,7 +13,7 @@ const Footer = () => {
         {jsonData.achievementBadges.map((badge) => {
           return (
             <div key={badge.slug}>
-              <img src={badge.location} alt="Layer5 badges" />
+              <img src={badge.location} alt="Khulnasoft badges" />
               <span>{badge.title}</span>
               <p>{badge.description}</p>
             </div>
@@ -27,7 +27,7 @@ const Footer = () => {
         {jsonData.projectBadges.map((badge) => {
           return (
             <div key={badge.slug}>
-              <img src={badge.imageSource} alt="Layer5 badges" />
+              <img src={badge.imageSource} alt="Khulnasoft badges" />
               <span>{badge.title}</span>
               <p dangerouslySetInnerHTML={{__html: badge.description}}></p>
             </div>
@@ -38,11 +38,11 @@ const Footer = () => {
 <h2 id="certification">Certification Badges</h2>
     <div className="badge-grid">
         <div>
-        <img src={MeshMasterCertified} alt="Layer5 badges" />
+        <img src={MeshMasterCertified} alt="Khulnasoft badges" />
           <span>MeshMaster</span> <p>This badge is awarded to individuals who have demonstrated a clear and holistic understanding of cloud native infrastructure management.</p>
         </div>
         <div>
-        <img src={CertificationProgram} alt="Layer5 badges" />
+        <img src={CertificationProgram} alt="Khulnasoft badges" />
           <span>Coming Soon...</span> <p>Additional certications are coming soon!</p>
         </div>
       </div>

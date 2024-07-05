@@ -14,14 +14,14 @@
 <a href="https://slack.khulnasoft.com" alt="Slack">
 <img src="https://img.shields.io/badge/Slack-@khulnasoft.svg?logo=slack" /></a>
 <a href="https://twitter.com/khulnasoft" alt="Twitter Follow">
-<img src="https://img.shields.io/twitter/follow/khulnasoft.svg?label=Follow+Layer5&style=social" /></a>
+<img src="https://img.shields.io/twitter/follow/khulnasoft.svg?label=Follow+Khulnasoft&style=social" /></a>
 <a href="https://github.com/khulnasoft/khulnasoft" alt="License">
 <img src="https://img.shields.io/github/license/khulnasoft/khulnasoft.svg" /></a>
 </p>
 
-<h5><p align="center"><i>If you’re using Layer5 products or if you like the project, please <a href="https://github.com/khulnasoft/khulnasoft/stargazers">★</a> this repository to show your support! 🤩</i></p></h5>
+<h5><p align="center"><i>If you’re using Khulnasoft products or if you like the project, please <a href="https://github.com/khulnasoft/khulnasoft/stargazers">★</a> this repository to show your support! 🤩</i></p></h5>
 
-# Layer5 Badges
+# Khulnasoft Badges
 *Examples*
 
 [![](https://raw.githubusercontent.com/khulnasoft-lab/meshplay-extensions-packages/master/assets/badges/meshmap/meshmap.svg)](https://meshplay.khulnasoft.com/user/090e7114-509a-4046-81f1-9c5fb8daf724?tab=badges) [![](https://raw.githubusercontent.com/khulnasoft-lab/meshplay-extensions-packages/master/assets/badges/meshplay-operator/meshplay-operator.svg)](https://meshplay.khulnasoft.com/user/090e7114-509a-4046-81f1-9c5fb8daf724?tab=badges) [![](https://raw.githubusercontent.com/khulnasoft-lab/meshplay-extensions-packages/master/assets/badges/docker-extension/docker-extension.svg)](https://meshplay.khulnasoft.com/user/090e7114-509a-4046-81f1-9c5fb8daf724?tab=badges)
@@ -33,12 +33,12 @@
 [![](https://raw.githubusercontent.com/khulnasoft-lab/meshplay-extensions-packages/master/assets/badges/first-application/first-application.svg)](https://meshplay.khulnasoft.com/user/090e7114-509a-4046-81f1-9c5fb8daf724?tab=badges) 
 -->
 
-See https://badges.khulnasoft.com for the full set and description of the Layer5 Recognition Program.
+See https://badges.khulnasoft.com for the full set and description of the Khulnasoft Recognition Program.
 
-# Registry for Layer5 Cloud Remote Provider Packages
-Access Layer5 Cloud at https://meshplay.khulnasoft.com 
+# Registry for Khulnasoft Cloud Remote Provider Packages
+Access Khulnasoft Cloud at https://meshplay.khulnasoft.com 
 
 
-## About Layer5
+## About Khulnasoft
 
-Layer5's cloud native application and infrastructure management software enables organizations to expect more from their infrastructure. We embrace _developer_-defined infrastructure. We empower developers to change how they write applications, support _operators_ in rethinking how they run modern infrastructure, and enable _product owners_ to regain full-control over their product portfolio.
+Khulnasoft's cloud native application and infrastructure management software enables organizations to expect more from their infrastructure. We embrace _developer_-defined infrastructure. We empower developers to change how they write applications, support _operators_ in rethinking how they run modern infrastructure, and enable _product owners_ to regain full-control over their product portfolio.
