@@ -6,7 +6,7 @@
   "author": "Lee Calcote",
   "dependencies": {
     "@gatsbyjs/relay-compiler": "^2.0.0-printer-fix.4",
-    "@tanstack/react-query": "^4.29.25",
+    "@tanstack/react-query": "^5.0.0",
     "@tanstack/react-query-devtools": "^5.0.0",
     "@tanstack/react-table": "^8.9.3",
     "axios": "^1.6.0",
