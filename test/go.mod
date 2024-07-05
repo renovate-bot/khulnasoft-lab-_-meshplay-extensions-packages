@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/gobuffalo/pop v4.13.1+incompatible
-	github.com/ory/client-go v1.1.5
+	github.com/ory/client-go v1.13.2
 	github.com/sirupsen/logrus v1.9.3
 )
 
@@ -46,7 +46,7 @@ require (
 	github.com/sourcegraph/annotate v0.0.0-20160123013949-f4cad6c6324d // indirect
 	github.com/sourcegraph/syntaxhighlight v0.0.0-20170531221838-bd320f5d308e // indirect
 	golang.org/x/net v0.17.0 // indirect
-	golang.org/x/oauth2 v0.4.0 // indirect
+	golang.org/x/oauth2 v0.21.0 // indirect
 	golang.org/x/sync v0.1.0 // indirect
 	golang.org/x/sys v0.13.0 // indirect
 	golang.org/x/term v0.13.0 // indirect
