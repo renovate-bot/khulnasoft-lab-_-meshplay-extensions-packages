@@ -255,9 +255,9 @@ The Meshplay Playground is connected to live Kubernetes cluster(s) and allows us
     return (
       <>
         <div className='thankyou-box'>
-          <h2>Thank you for your interest in Layer5 Recognition Program  early access program!</h2>
+          <h2>Thank you for your interest in Khulnasoft Recognition Program  early access program!</h2>
           <p>
-            You are now signed up for the Layer5 Recognition Program early access program and your position
+            You are now signed up for the Khulnasoft Recognition Program early access program and your position
             on the waiting list is confirmed. Please wait patiently for a response from the Meshplay
             team.
           </p>

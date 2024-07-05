@@ -113,7 +113,7 @@ const Footer = () => {
             </li> */}
             <li>
               <a className="category-link" href="https://meshplay.khulnasoft.com">
-                Layer5 Cloud
+                Khulnasoft Cloud
               </a>
             </li>
             <li>
@@ -192,7 +192,7 @@ const Footer = () => {
       </div>
       <div className="container flex copyright">
         <div className="text">
-          &copy; {new Date().getFullYear()}- The Layer5 Authors
+          &copy; {new Date().getFullYear()}- The Khulnasoft Authors
         </div>
         <div className="text">Empowering engineers all around the world</div>
         <div className="text">

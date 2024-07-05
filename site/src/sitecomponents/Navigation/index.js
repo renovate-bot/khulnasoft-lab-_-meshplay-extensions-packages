@@ -20,7 +20,7 @@ function Navigation({ theme, toggleTheme, showSignUpButton, logo }) {
   return (
     <Header>
       <nav className={scroll ? 'scrolled' : ''}>
-        <img className="logo" src={logo} alt="Layer5 Logo" />
+        <img className="logo" src={logo} alt="Khulnasoft Logo" />
         <div className="btn-container">
           <Toggle theme={theme} toggleTheme={toggleTheme} />
           {showSignUpButton && (

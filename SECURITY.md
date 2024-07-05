@@ -57,7 +57,7 @@ branches.
 - Meshplay team ensures all necessary binaries are promptly built and published.
 - Once the binaries are available, an announcement is sent out on the following channels:
   - The [Meshplay blog](https://meshplay.io/blog/)
-  - The [Meshplay Twitter feed](https://twitter.com/meshplayio)
+  - The [Meshplay Twitter feed](https://twitter.com/khulnasoft)
   - The #announcements channel on Slack
 
 As much as possible this announcement will be actionable, and include any mitigating steps customers can take prior to

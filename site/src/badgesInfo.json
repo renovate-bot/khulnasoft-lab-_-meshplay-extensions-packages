@@ -22,7 +22,7 @@
             "slug": "hacktoberfest-contributor",
             "location": "assets/badges/hacktoberfest-contributor/hacktoberfest-contributor.png",
             "title": "Hacktoberfest Contributor",
-            "description": "This badge is awarded to the contributors who contribute to any Layer5 project during Hacktoberfest."
+            "description": "This badge is awarded to the contributors who contribute to any Khulnasoft project during Hacktoberfest."
         },
         {
             "slug": "review-rockstar",
@@ -34,7 +34,7 @@
             "slug": "bring-a-buddy",
             "location": "assets/badges/bring-a-buddy/bring-a-buddy.png",
             "title": "Bring a Buddy",
-            "description": "This badge is awarded to the users who invite someone to Layer5 Cloud."
+            "description": "This badge is awarded to the users who invite someone to Khulnasoft Cloud."
         },
         {
             "slug": "first-share",
@@ -88,7 +88,7 @@
             "slug": "continuous-contributor",
             "location": "assets/badges/continuous-contributor/continuous-contributor.png",
             "title": "Continuous Contributor",
-            "description": "This badge is awarded to the community members who make consistent and impactful contributions for a long period of time in Layer5 projects in recognition and appreciation of their efforts."
+            "description": "This badge is awarded to the community members who make consistent and impactful contributions for a long period of time in Khulnasoft projects in recognition and appreciation of their efforts."
         }
     ],
     "projectBadges": [
@@ -114,7 +114,7 @@
             "slug": "community",
             "imageSource": "assets/badges/community/community.png",
             "title": "Community",
-            "description": "This badge is awarded to the community members who repeatedly engage in welcoming, encouraging, and supporting other Layer5 community members. Community members who earn this badge occasionally graduate to undertaking the Community Manager role."
+            "description": "This badge is awarded to the community members who repeatedly engage in welcoming, encouraging, and supporting other Khulnasoft community members. Community members who earn this badge occasionally graduate to undertaking the Community Manager role."
         },
         {
             "slug": "meshplay",
